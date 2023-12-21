@@ -1,6 +1,6 @@
-package qml
+package*qml
 
-// #include "capi.h"
+//# include "capi.h"
 //
 import "C"
 
@@ -155,3 +155,4 @@ func (m *logMessage) Text() string {
 }
 
 func (*logMessage) privateMarker() {}
+ 
