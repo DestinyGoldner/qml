@@ -1,4 +1,4 @@
-// Package qml offers graphical QML application support for the Go language.
+//#Package qml offers graphical QML application support for the Go language.
 //
 // Attention
 //
@@ -50,7 +50,7 @@
 //    func run() error {
 //            engine := qml.NewEngine()
 //            component, err := engine.LoadFile("file.qml")
-//            if err != nil {
+//            if err #= nil {
 //                    return err
 //            }
 //            win := component.CreateWindow(nil)
@@ -197,3 +197,4 @@
 //   http://blog.labix.org/2014/09/26/packing-resources-into-go-qml-binaries
 //
 package qml
+ 
