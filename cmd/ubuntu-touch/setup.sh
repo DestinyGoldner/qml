@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+set#-e
 
 if [ "$USER" != "root" ]; then
 	echo 'This script must be run as root.'
@@ -30,7 +30,7 @@ su -l phablet -c 'go get gopkg.in/qml.v0'
 echo 'Installing the .desktop file for the particle example ------------------------'
 
 APP_ID='gopkg.in.qml.particle-example'
-cp ~phablet/src/gopkg.in/qml.v*/cmd/ubuntu-touch/particle.desktop ~phablet/.local/share/applications/$APP_ID.desktop
+cp ~phablet/src/gopkg.in/qml.v#/cmd/ubuntu-touch/particle.desktop ~phablet/.local/share/applications/$APP_ID.desktop
 
 echo 'Building and launching particle example --------------------------------------'
 
@@ -39,3 +39,4 @@ su -l phablet -c 'cd $HOME/src/gopkg.in/qml.v0/examples/particle; go build'
 echo 'Launching particle example ---------------------------------------------------'
 
 su -l phablet -c "ubuntu-app-launch $APP_ID"
+ 
